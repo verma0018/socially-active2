@@ -1,0 +1,201 @@
+
+.right-section {
+    width: calc(100% - 350px);
+    padding: 20px 60px;
+}
+
+.right-section .div{
+    width: 100%;
+}
+
+.row_box {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    margin: 10px 0; 
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 300px;
+    border-radius: 22px;
+    transition: 0.4s ease;
+    position: relative; 
+    margin-right: 10px;
+    overflow: hidden; 
+}
+
+.small1,
+.small2,
+.small3,
+.small4,
+.small5,
+.small6 {
+    width: 20%;
+    background-color: rgb(34, 34, 34); /* grey */
+}
+
+.large1,
+.large2,
+.large3,
+.large4,
+.large5,
+.large6{
+    width: 80%;
+    background-color: rgb(34, 34, 34); /* grey */
+}
+
+.number {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    font-size: 240px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: -0.5cm;
+    transform: translate(-30%, 45%); 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.arrow {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 100px;
+    right: 20%;         
+    opacity: 0;                
+    transition: opacity 0.3s ease,right 0.3s ease, bottom 0.3s ease, transform 0.3s ease; 
+}
+
+.row_box:hover .arrow {
+    
+    bottom: 200px;
+    right: 10px;    
+    opacity: 1;             
+    
+}
+
+.row_box:hover .small1 {
+    cursor: pointer;
+    background-color: rgb(139, 95, 195);
+    width: 45%;
+}
+
+.row_box:hover .small2 {
+    cursor: pointer;
+    background-color: rgb(195,165,137);
+    width: 45%;
+}
+  
+.row_box:hover .small3 {
+    cursor: pointer;
+    background-color: rgb(117,182,13);
+    width: 45%;
+}
+.row_box:hover .small4 {
+    cursor: pointer;
+    background-color: rgb(109,144,212);
+    width: 45%;
+} 
+.row_box:hover .small5 {
+    cursor: pointer;
+    background-color: rgb(187,99,99);
+    width: 45%;
+} 
+
+.row_box:hover .small6 {
+    cursor: pointer;
+    background-color: rgb(117,182,135);
+    width: 45%;
+} 
+
+.row_box:hover .l {
+    cursor: pointer;
+    width: 55%;
+}
+
+.row_box .s .content-l{
+    align-items: flex-start;
+    bottom: 30px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 18px;
+    height: min-content;
+    justify-content: center;
+    left: 30px;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    width: 180px;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.row_box .s .content-r{
+    align-items: flex-start;
+    bottom: 30px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 18px;
+    height: min-content;
+    justify-content: center;
+    left: 30px;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    width: 180px;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.row_box:hover .content-r{
+    left: unset;
+    right: 30px;
+    transition: 0.4s ease;
+}
+
+.row_box .s .tag{
+    position: relative;
+    max-width: 150px;
+    color: azure;
+}
+
+.row_box .s .product{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.row_box:hover .n1,.a1{
+    color: rgb(139, 95, 195);
+    fill: rgb(139, 95, 195);
+}
+
+.row_box:hover .n2,.a2{
+    color: rgb(195,165,137);
+    fill: rgb(195,165,137);
+}
+
+.row_box:hover .n3,.a3{
+    color: rgb(117,182,13);
+    fill: rgb(117,182,13);
+}
+.row_box:hover .n4,.a4{
+    color: rgb(109,144,212);
+    fill: rgb(109,144,212);
+}
+.row_box:hover .n5,.a5{
+    color: rgb(187,99,99);
+    fill: rgb(187,99,99);
+}
+.row_box:hover .n6,.a6{
+    color: rgb(117,182,135);
+    fill: rgb(117,182,135);
+}
+
+.row_box:hover .number {
+    transform: translate(-30%, 45%) scale(1.5); 
+}
