@@ -69,7 +69,7 @@
 
 /* --------------- header --------------- */
 
-.header-ca .main-box {
+/* .header-ca .main-box {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -94,11 +94,11 @@
   background-position: left top;
   transform: scaleX(-1); 
   z-index: -1;
-}
+} */
 
 /**************** Accessories *******************/
 
-.header-ca .main-box-a {
+.header-ca.header-acessories .main-box-a {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -109,7 +109,7 @@
   z-index: 10;
 }
 
-.header-ca .main-box-a:after {
+.header-ca.header-acessories .main-box-a:after {
   content: '';
   position: absolute;
   bottom: 10%;
@@ -126,7 +126,7 @@
 }
 
 /********************** Aesthetics ************************/
-.header-ca .main-box-aesthetics {
+.header-ca.header-ae .main-box-aesthetics {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -137,25 +137,25 @@
   z-index: 10;
 }
 
-.header-ca .main-box-aesthetics:after {
+.header-ca.header-ae .main-box-aesthetics:after {
   content: '';
   position: absolute;
   bottom: 10%;
-  right: -20%;
+  right: 0%;
   left: 0;
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/Accessories/background.jpg);
+  background-image: url(../imgs/Aesthetic/HomeAesthetics.jpg);
   background-size: cover;
-  background-position: left top;
-  transform: scaleX(-1); 
+  background-position: center;
+  /* transform: scaleX(-1);  */
   z-index: -1;
 }
 
 /********************** Attire ************************/
 
-.header-ca .main-box-attire {
+.header-ca.header-attire .main-box-attire {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -166,25 +166,25 @@
   z-index: 10;
 }
 
-.header-ca .main-box-attire:after {
+.header-ca.header-attire .main-box-attire:after {
   content: '';
   position: absolute;
-  bottom: 10%;
-  right: -20%;
+  bottom: -10%;
+  right: 0%;
   left: 0;
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/Accessories/background.jpg);
+  background-image: url(../imgs/Attire/Attire.jpg);
   background-size: cover;
-  background-position: left top;
-  transform: scaleX(-1); 
+  background-position: center;
+  /* transform: scaleX(-1);  */
   z-index: -1;
 }
 
 /********************** Cosmetics ************************/
 
-.header-ca .main-box-cosmetics {
+.header-ca.header-cosmetics .main-box-cosmetics {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -195,7 +195,7 @@
   z-index: 10;
 }
 
-.header-ca .main-box-cosmetics:after {
+.header-ca.header-cosmetics .main-box-cosmetics:after {
   content: '';
   position: absolute;
   bottom: 10%;
@@ -204,7 +204,7 @@
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/Accessories/background.jpg);
+  background-image: url(../imgs/cosmetics/Cosmetics.jpg);
   background-size: cover;
   background-position: left top;
   transform: scaleX(-1); 
@@ -213,7 +213,7 @@
 
 /********************** Epicurean ************************/
 
-.header-ca .main-box-epicurean {
+.header-ca.header-epicurean .main-box-epicurean {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -224,25 +224,25 @@
   z-index: 10;
 }
 
-.header-ca .main-box-epicurean:after {
+.header-ca.header-epicurean .main-box-epicurean:after {
   content: '';
   position: absolute;
   bottom: 10%;
-  right: -20%;
+  right: 10%;
   left: 0;
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/Accessories/background.jpg);
+  background-image: url(../imgs/Epicurean/EpicureanDelight.jpg);
   background-size: cover;
-  background-position: left top;
+  background-position: center;
   transform: scaleX(-1); 
   z-index: -1;
 }
 
 /********************** Styling ************************/
 
-.header-ca .main-box-styling {
+.header-ca.header-styling .main-box-styling {
   color: #fff;
   height: 870px;
   padding: 40px;
@@ -253,7 +253,7 @@
   z-index: 10;
 }
 
-.header-ca .main-box-styling:after {
+.header-ca.header-styling .main-box-styling:after {
   content: '';
   position: absolute;
   bottom: 10%;
