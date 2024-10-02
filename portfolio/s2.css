@@ -32,7 +32,7 @@
 .small4,
 .small5,
 .small6 {
-    width: 20%;
+    width: 30%;
     background-color: rgb(34, 34, 34); /* grey */
 }
 
@@ -42,7 +42,7 @@
 .large4,
 .large5,
 .large6{
-    width: 80%;
+    width: 70%;
     background-color: rgb(34, 34, 34); /* grey */
 }
 
@@ -113,6 +113,87 @@
     cursor: pointer;
     width: 55%;
 }
+.box.l {
+    position: relative; 
+}
+
+.box.l .bg-img-l1 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
+
+.box.l .bg-img-l2 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
+
+.box.l .bg-img-l3 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/3.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
+
+.box.l .bg-img-l4 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/4.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
+
+.box.l .bg-img-l5 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/5.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
+
+.box.l .bg-img-l6 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    background-image: url('creative_agency/assets/imgs/Portfolio_bg/1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    z-index: 0;
+}
 
 .row_box .s .content-l{
     align-items: flex-start;
@@ -124,11 +205,11 @@
     gap: 18px;
     height: min-content;
     justify-content: center;
-    left: 30px;
+    left: 20px;
     overflow: visible;
     padding: 0;
     position: absolute;
-    width: 180px;
+    max-width: 150px;
     z-index: 1;
     transition: 0.4s ease;
 }
@@ -156,6 +237,10 @@
     left: unset;
     right: 30px;
     transition: 0.4s ease;
+}
+
+.box .contat-r-small, .contat-l-small{
+    opacity: 0;
 }
 
 .row_box .s .tag{
@@ -198,4 +283,80 @@
 
 .row_box:hover .number {
     transform: translate(-30%, 45%) scale(1.5); 
+}
+
+/* @media (min-width: 1001px) and (max-width: 1230px) {
+    .left-side{
+        
+    }
+    .row_box .s .content-r,.content-l {
+        max-width: 100px;
+    }
+} */
+/* Responsive styles for screens between 451px and 992px */
+@media (min-width: 748px) and (max-width: 1000px) {
+    .right-section{
+        width: 100%;
+    }
+    .small1,
+    .small2,
+    .small3,
+    .small4,
+    .small5,
+    .small6 {
+        width: 30%;
+    }
+
+    .large1,
+    .large2,
+    .large3,
+    .large4,
+    .large5,
+    .large6{
+        width: 70%;
+    }
+    .row_box .s .content-r,.content-l {
+        max-width: 80px;
+    }
+    .row_box .s .product{
+        font-size: 20px;
+    }
+}
+
+/* Responsive styles for screens 450px and below */
+@media (max-width: 747px) {
+    .right-section {
+        width: 100%; /* Take full width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .row_box {
+        flex-direction: column; /* Stack the boxes vertically */
+    }
+
+    .small1, .small2, .small3, .small4, .small5, .small6 {
+        width: 100%; /* Make small boxes take full width */
+        margin-bottom: 10px; /* Add spacing between stacked boxes */
+    }
+
+    .large1, .large2, .large3, .large4, .large5, .large6 {
+        display: none; /* Hide large boxes */
+    }
+
+    .l .number, .arrow {
+        display: none; /* Hide the number and arrow */
+    }
+
+    .box .contat-r-small, .contat-l-small{
+        opacity: 1;
+    }
+    .box .contat-r-small .number, .contat-l-small .number{
+        left: unset;
+        right: 5%;        
+        transform: translate(5%, 45%);
+        font-weight: 400;
+        font-style: unset;
+        font-size: 8em;
+        letter-spacing: -0.2cm;
+    }
 }

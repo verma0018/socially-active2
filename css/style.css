@@ -413,13 +413,13 @@ body {
   }
 }
 
-@media (max-width: 920px) {
+@media (min-width: 451px) and (max-width: 920px) {
   .client-logo {
     width: calc(100% / 7); /* Adjust to show a number of logos simultaneously */
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 921px) and (max-width: 1440px) {
   .client-logo {
     width: calc(100% / 11); /* Adjust to show a number of logos simultaneously */
   }
