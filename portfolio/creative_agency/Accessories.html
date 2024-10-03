@@ -134,7 +134,6 @@
                                 <div class="topnav ml-auto">
                                     <div class="menu-icon cursor-pointer">
                                         <i class="fas fa-bars"></i>
-                                        
                                     </div>
                                 </div>
                             </nav>
@@ -151,13 +150,10 @@
                                     </ul>
                                     <span class="mt-30">© 2024, All Rights Reserved</span>
                                     <div class="social-icon mt-40">
-                                        <a href="#0">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                        <a href="#0">
+                                        <a href="https://www.instagram.com/socially.active_/">
                                             <i class="fab fa-instagram"></i>
                                         </a>
-                                        <a href="#0">
+                                        <a href="https://www.linkedin.com/company/socially-active0/?viewAsMember=true">
                                             <i class="fab fa-linkedin"></i>
                                         </a>
                                     </div>
@@ -204,7 +200,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </span>
                                                     </h6>
-                                                    <p>Based on 24 reviews on <a href="#0">Clutch</a></p>
+                                                    <!-- <p>Based on 24 reviews on <a href="#0">Clutch</a></p> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -294,7 +290,7 @@
                                     </div>
                                     <div class="item mb-60 wow fadeInUp slow" data-wow-delay="0.2s">
                                         <div class="img">
-                                            <video width="100%" height="auto" autoplay muted loop>
+                                            <video width="100%" height="auto" autoplay loop controls>
                                                 <source src="assets/imgs/Accessories/3.mp4" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
@@ -309,17 +305,17 @@
                                     </div>
                                     <div class="item mb-60 wow fadeInUp slow" data-wow-delay="0.2s">
                                         <div class="img im2">
-                                            <video width="100%" height="auto" autoplay muted loop>
+                                            <video width="100%" height="auto" autoplay loop controls>
                                                 <source src="assets/imgs/Accessories/5.mp4" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
                                     </div>
-                                    <!-- <div class="item mb-100 wow fadeInUp slow" data-wow-delay="0.2s">
+                                    <div class="item mb-100 wow fadeInUp slow" data-wow-delay="0.2s">
                                         <div class="img im1">
                                             <img src="assets/imgs/Accessories/6.png" alt="">
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -436,33 +432,7 @@
                         <!-- ==================== Start Numbers ==================== -->
 
                         <section class="numbers-ca">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="item md-mb50 wow fadeInUp slow" data-wow-delay="0.2s">
-                                        <h2>95%</h2>
-                                        <span>Clients satisfied and repeating</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="gl-rate d-flex align-items-center mt-60">
-                                        <div class="icon">
-                                            <img src="assets/imgs/header/logo-clutch.svg" alt="">
-                                        </div>
-                                        <div class="cont">
-                                            <h6>4.8/5
-                                                <span class="stars">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </span>
-                                            </h6>
-                                            <p>Based on 24 reviews on <a href="#0">Clutch</a></p>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>
+                           
                         </section>
 
                         <!-- ==================== End Numbers ==================== -->
@@ -484,7 +454,7 @@
                                                     <img src="assets/imgs/header/logo-clutch.svg" alt="">
                                                 </div>
                                                 <div class="cont">
-                                                    <h6>4.9/5 <span>Rating on <a href="#0">Clutch</a></span></h6>
+                                                    <h6>4.9/5 <span>Rating</span></h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -584,16 +554,14 @@
                                 </div>
                             </div>
                             <div class="contact-form">
-                                <form id="contact-form" method="post" action="contact.php">
-
+                                <form id="contact-form" method="post" action="" class="email-form">
                                     <div class="messages"></div>
-
                                     <div class="controls row">
 
                                         <div class="col-lg-6">
                                             <div class="form-group mb-30">
                                                 <label for="form_name">Full Name <span class="star">*</span></label>
-                                                <input id="form_name" type="text" name="name"
+                                                <input id="name" type="text" name="name"
                                                     placeholder="Your full name" required="required">
                                             </div>
                                         </div>
@@ -602,7 +570,7 @@
                                             <div class="form-group mb-30">
                                                 <label for="form_email">Email Address <span
                                                         class="star">*</span></label>
-                                                <input id="form_email" type="email" name="email"
+                                                <input id="email" type="email" name="email"
                                                     placeholder="Your email address" required="required">
                                             </div>
                                         </div>
@@ -610,26 +578,30 @@
                                         <div class="col-lg-6">
                                             <div class="form-group mb-30">
                                                 <label for="form_subject">Subject <span class="star">*</span></label>
-                                                <input id="form_subject" type="text" name="subject"
+                                                <input id="subject" type="text" name="subject"
                                                     placeholder="subject" required="required">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group mb-30">
-                                                <label for="form_budget">Your Budget <span
-                                                        class="opt sub-color">(Optional)</span></label>
-                                                <input id="form_budget" type="text" name="budget"
-                                                    placeholder="A range of budget for project" required="required">
+                                                <label for="num">Contact Number</label>
+                                                <input id="num" type="text" name="num"
+                                                    placeholder="Your Contact Details" required="required">
                                             </div>
                                         </div>
 
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="form_message">Message</label>
-                                                <textarea id="form_message" name="message"
+                                                <label for="fmessage">Message</label>
+                                                <textarea id="message" name="message"
                                                     placeholder="Write your message here..." rows="4"
                                                     required="required"></textarea>
+                                            </div>
+                                            <div class="my-3">
+                                                <div class="loading">Loading</div>
+                                                <div class="error-message">Sorry! Some error occured, please try again.</div>
+                                                <div class="sent-message">Your message has been sent. Thank you!</div>
                                             </div>
                                             <div class="mt-60">
                                                 <button type="submit" class="butn butn-md butn-bord butn-rounded">
@@ -658,19 +630,10 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
     <!-- jQuery -->
     <script src="../common/js/lib/jquery-3.6.0.min.js"></script>
     <script src="../common/js/lib/jquery-migrate-3.4.0.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- plugins -->
     <script src="../common/js/lib/plugins.js"></script>
 
@@ -687,6 +650,58 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
+
+    <script>
+        document.querySelector('.email-form').addEventListener("submit", submitForm);
+
+        function submitForm(e) {
+            e.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let mail = document.getElementById('email').value;
+            let contact = document.getElementById('num').value;
+            let sub = document.getElementById('subject').value;
+            let message = document.getElementById('message').value;
+
+            // Reset the form after submission
+            document.querySelector('.email-form').reset();
+
+            // Send the mail
+            sendMail(name, mail, contact, sub, message);
+    }
+
+    function sendMail(name, mail, contact, sub, message) {
+        Email.send({
+            // Host: "smtp.gmail.com",
+            Username: "performence.marketing04@gmail.com",
+            Password: "51B5FB14E8E5EA70CC07A989B1E52AEDE35F",
+            SecureToken: "8e874cf8-b218-49a3-8c82-59b4848d44bb",
+            To: 'performence.marketing04@gmail.com',
+            From: 'performence.marketing04@gmail.com',
+            Subject: `${name} sent you a message: ${sub}`,
+            Body: `Name: ${name} <br/> Email: ${mail} <br/> Contact: ${contact} <br/> Message: ${message}`,
+        }).then(
+            response => {
+                if (response === 'OK') {
+                    showMessage('sent-message');
+                } else {
+                    showMessage('error-message');
+                }
+            }).catch(error => {
+                showMessage('error-message');
+            });
+    }
+
+    function showMessage(type) {
+        const messageElement = document.querySelector(`.${type}`);
+        messageElement.style.display = 'block';
+
+        // Hide the message after 5 seconds
+        setTimeout(() => {
+            messageElement.style.display = 'none';
+        }, 5000);
+    }
+    </script>
 
 </body>
 

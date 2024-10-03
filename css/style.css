@@ -734,6 +734,14 @@ section {
     width: calc(50% - 20px);
   }
 
+  .about_wrapper .centre-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
   .about-page {
     display: flex;
     flex-direction: column;
@@ -1115,6 +1123,7 @@ h1 {
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 
 .contact .email-form .error-message br+br {
@@ -1128,6 +1137,7 @@ h1 {
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 
 .contact .email-form .loading {

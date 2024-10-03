@@ -66,33 +66,87 @@ navBar.forEach(function(a){
             faqItem.classList.toggle('open');
         });
     });
+
+    // document.querySelector('.email-form').addEventListener("submit", submitForm);
+
+    // function submitForm(e) {
+    //     e.preventDefault();
+        
+    //     let name = document.getElementById('name').value;
+    //     let mail = document.getElementById('email').value;
+    //     let contact = document.getElementById('num').value;
+    //     let sub = document.getElementById('subject').value;
+    //     let message = document.getElementById('message').value;
+        
+    //     // Reset the form after submission
+    //     document.querySelector('.email-form').reset();
+    //     sendMail(name, mail, contact, sub, message);
+    // }
+    
+    // function sendMail(name, mail, contact, sub, message) {
+    //     Email.send({
+    //         // Host: "smtp.gmail.com",
+    //         Username: "performence.marketing04@gmail.com",
+    //         Password: "51B5FB14E8E5EA70CC07A989B1E52AEDE35F",
+    //         SecureToken: "8e874cf8-b218-49a3-8c82-59b4848d44bb",
+    //         To: 'performence.marketing04@gmail.com',
+    //         From: 'performence.marketing04@gmail.com',
+    //         Subject: `${name} sent you a message: ${sub}`,
+    //         Body: `Name: ${name} <br/> Email: ${mail} <br/> Contact: ${contact} <br/> Message: ${message}`,
+    //     }).then(
+    //         message => alert(message)
+    //     );
+    // }
     
 
-    document.querySelector('.contact').addEventListener("submit", submitForm);
 
-    function submitForm(e){
+    document.querySelector('.email-form').addEventListener("submit", submitForm);
+
+    function submitForm(e) {
         e.preventDefault();
+    
         let name = document.getElementById('name').value;
         let mail = document.getElementById('email').value;
-        let contact = document.getElementById('contact').value;
+        let contact = document.getElementById('num').value;
         let sub = document.getElementById('subject').value;
         let message = document.getElementById('message').value;
-        document.querySelector('.contact-form').reset();
     
-        sendMail(name,mail,contact,sub,message);
+        // Reset the form after submission
+        document.querySelector('.email-form').reset();
+    
+        // Send the mail
+        sendMail(name, mail, contact, sub, message);
     }
     
-    function sendMail(name,mail,sub,message) {
+    function sendMail(name, mail, contact, sub, message) {
         Email.send({
-            Host : "smtp.gmail.com",
-            // Username : "sendmailtobetaque@gmail.com",
-            Password : "dgmsrbdfrthytthh",
-            // 61186C07E03B60A2AC7039EC93340D540140 This is My Elastic Mail SMTP Credentials Password for mail verma07126@gmail.com Port 2525
-            // SecureToken : "22efb137-8bdd-4cb5-950a-8ea8b708b137",
-            To : 'sendmailtobetaque@gmail.com',
-            From : `${mail}`,
-            Subject : `${name} sent you a message: ${sub}`,
-            Body : `Name: ${name} <br/> Email: ${mail} <br/> Message: ${message}`,
+            // Host: "smtp.gmail.com",
+            Username: "performence.marketing04@gmail.com",
+            Password: "51B5FB14E8E5EA70CC07A989B1E52AEDE35F",
+            SecureToken: "8e874cf8-b218-49a3-8c82-59b4848d44bb",
+            To: 'performence.marketing04@gmail.com',
+            From: 'performence.marketing04@gmail.com',
+            Subject: `${name} sent you a message: ${sub}`,
+            Body: `Name: ${name} <br/> Email: ${mail} <br/> Contact: ${contact} <br/> Message: ${message}`,
         }).then(
-            message => alert(message));
+            response => {
+                if (response === 'OK') {
+                    showMessage('sent-message');
+                } else {
+                    showMessage('error-message');
+                }
+            }).catch(error => {
+                showMessage('error-message');
+            });
     }
+    
+    function showMessage(type) {
+        const messageElement = document.querySelector(`.${type}`);
+        messageElement.style.display = 'block';
+    
+        // Hide the message after 5 seconds
+        setTimeout(() => {
+            messageElement.style.display = 'none';
+        }, 5000);
+    }
+    

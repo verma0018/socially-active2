@@ -120,9 +120,20 @@
   height: 100%;
   background-image: url(../imgs/Accessories/background.jpg);
   background-size: cover;
-  background-position: left top;
+  background-position: center;
   transform: scaleX(-1); 
   z-index: -1;
+}
+
+.header-ca.header-acessories .caption h1{
+  color: #000;
+  font-size: 70px;
+}
+
+.header-ca.header-acessories .text h6{
+  /* color: #000; */
+  font-size: 40px;
+  line-height: 60px;
 }
 
 /********************** Aesthetics ************************/
@@ -199,17 +210,29 @@
   content: '';
   position: absolute;
   bottom: 10%;
-  right: -20%;
+  right: 0%;
   left: 0;
   top: 0%;
   width: 100%;
   height: 100%;
   background-image: url(../imgs/cosmetics/Cosmetics.jpg);
   background-size: cover;
-  background-position: left top;
+  background-position: center;
   transform: scaleX(-1); 
   z-index: -1;
 }
+
+.header-ca.header-cosmetics .caption h1{
+  color: #000;
+  font-size: 70px;
+}
+
+.header-ca.header-cosmetics .text h6{
+  /* color: #000; */
+  font-size: 40px;
+  line-height: 60px;
+}
+
 
 /********************** Epicurean ************************/
 
@@ -236,8 +259,19 @@
   background-image: url(../imgs/Epicurean/EpicureanDelight.jpg);
   background-size: cover;
   background-position: center;
-  transform: scaleX(-1); 
+  transform: scaleX(1); 
   z-index: -1;
+}
+
+.header-ca.header-epicurean .caption h1{
+  color: #000;
+  font-size: 100px;
+}
+
+.header-ca.header-epicurean .text h6{
+  /* color: #000; */
+  font-size: 50px;
+  line-height: 60px;
 }
 
 /********************** Styling ************************/
@@ -256,18 +290,28 @@
 .header-ca.header-styling .main-box-styling:after {
   content: '';
   position: absolute;
-  bottom: 10%;
-  right: -20%;
+  bottom: 0%;
+  right: 0%;
   left: 0;
   top: 0%;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/Accessories/background.jpg);
+  background-image: url(../imgs/Styling/Styling.jpg);
   background-size: cover;
-  background-position: left top;
+  background-position: center;
   transform: scaleX(-1); 
   z-index: -1;
 }
+
+.header-ca.header-styling .caption h1{
+  color: #000;
+  font-size: 90px;
+}
+
+/* .header-ca.header-styling .text h6{
+  font-size: 50px;
+  line-height: 60px;
+} */
 
 /********************** Styling Over ************************/
 
@@ -277,6 +321,7 @@
   font-size: 80px;
   line-height: 100px;
   font-weight: 600;
+  color: #000;
 }
 
 .header-ca .text {
@@ -582,6 +627,49 @@
 
 
 /* --------------- Contact --------------- */
+
+.contact-ca .email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.contact-ca .email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact-ca .email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.contact-ca .email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-ca .email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  animation: animate-loading 1s linear infinite;
+}
 .contact-ca {
   background: #333333;
   color: #fff; }
