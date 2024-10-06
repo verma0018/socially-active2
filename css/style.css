@@ -1390,8 +1390,14 @@ h1 {
   /* 3 Banner */
   .banner_wrapper .banner-title {
     font-size: 36px;
-  }
+  } 
 
+}
+
+@media (max-width: 840px) {
+  .contact-left{
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1411,6 +1417,10 @@ h1 {
 
   .banner_wrapper .banner-title{
     text-align: center;
+  }
+
+  .contact-left{
+    display: none;
   }
 
 }
