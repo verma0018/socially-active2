@@ -1017,8 +1017,20 @@ h1 {
   padding: 30px 30px;
 }
 
+
 .contact-left {
-  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 100%; 
+}
+
+.contact-left img {
+  max-width: 100%;
+  height: auto; 
+  display: block;
+  margin: auto;
   border-radius: 10px 0 0 10px;
 }
 

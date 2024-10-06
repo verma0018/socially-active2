@@ -704,9 +704,14 @@
     .name-horizontal .name {
         font-size: 18px; /* Reduce font size of name */
     }
-
-    .name-horizontal .name-by {
-        font-size: 14px; /* Reduce font size of name-by */
+    .name-horizontal .name-by::before{
+      content: "- ";
+    }
+    .name-horizontal .name-by{
+      margin-top: 0px;
+      margin-left: 10px;
+      font-size: 16px;
+      margin: auto 10px;
     }
 }
 
