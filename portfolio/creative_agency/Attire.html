@@ -686,10 +686,11 @@
 
     function sendMail(name, mail, contact, sub, message) {
         Email.send({
-            // Host: "smtp.gmail.com",
+            Host: "smtp.elasticemail.com",
             Username: "performence.marketing04@gmail.com",
-            Password: "51B5FB14E8E5EA70CC07A989B1E52AEDE35F",
-            SecureToken: "8e874cf8-b218-49a3-8c82-59b4848d44bb",
+            Password: "51B5FB14E8E5EA70CC07A989B1E52AEDE35F",  // Use App Password instead of regular password
+            Port: 587,  // Use TLS port
+            Secure: true,
             To: 'performence.marketing04@gmail.com',
             From: 'performence.marketing04@gmail.com',
             Subject: `${name} sent you a message: ${sub}`,
@@ -699,9 +700,11 @@
                 if (response === 'OK') {
                     showMessage('sent-message');
                 } else {
+                    console.error(response);  // Log the response for better error handling
                     showMessage('error-message');
                 }
             }).catch(error => {
+                console.error(error);  // Log the error
                 showMessage('error-message');
             });
     }
