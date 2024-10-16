@@ -34,7 +34,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85" id="body">
     <!-- <div class="container-fluid bg-white p-0"> -->
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -235,12 +235,34 @@
                         </div>
                     </div>
                     <div class="centre-btn">
-                        <a class="btn btn-dark rounded-pill py-3 px-5 mt-2 text-center rm-btn" href="./portfolio/portfolio.html">Read More</a>
+
+                        <div class="overlay" id="overlay"></div>
+
+                        <div class="wrapper" id="wrapper">
+                        <div class="content">
+                            <a class="btn btn-dark rounded-pill py-3 px-5 mt-2 text-center rm-btn" id="read-more-btn">Download Brochure</a>
+                        </div>
+
+                        <div class="popup-form" id="popup-form">
+                            <button class="close-btn" id="close-form-btn">&times;</button>
+                            <form class="email-form">
+                                <h3>Submit Your Details</h3>
+                                <input type="text" id="name" placeholder="Your Name" required><br>
+                                <input type="email" id="email" placeholder="Your Email" required><br>
+                                <input type="text" id="num" placeholder="Contact Number" required><br>
+                                <button type="submit" class="popup-btn">Submit</button>
+                            </form>
+                            <div class="sent-message" style="display: none;">Email sent successfully!</div>
+                            <div class="error-message" style="display: none;">Failed to send email!</div>
+                        </div>
+                        </div>
+
+
+
                     </div>
                     
                 </div>
                 <div class="col-lg-6 wow zoomIn about-img1" data-wow-delay="0.1s">
-                    <!-- <img class="img-fluid about-img" alt="Image by storyset on Freepik" src="img/about-2.jpg"> -->
                     <img class="img-fluid about-img" alt="Image by storyset on Freepik" src="https://raw.githubusercontent.com/verma0018/sociallyActiveDatabase/refs/heads/main/IndexAssets/img/Grid.png">
                 </div>
             </div>
