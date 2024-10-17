@@ -170,7 +170,7 @@ document.getElementById('close-form-btn').addEventListener('click', () => {
 
 
 // Form submission logic
-document.querySelector('.email-form').addEventListener('submit', submitFormPopUp);
+document.querySelector('.popup-email-form').addEventListener('submit', submitFormPopUp);
 
 function submitFormPopUp(e) {
     e.preventDefault();
@@ -179,7 +179,7 @@ function submitFormPopUp(e) {
     let mail = document.getElementById('email').value;
     let contact = document.getElementById('num').value;
 
-    document.querySelector('.email-form').reset();  // Reset the form
+    document.querySelector('.popup-email-form').reset();  // Reset the form
 
     sendMailPopUp(name, mail, contact);
 }
